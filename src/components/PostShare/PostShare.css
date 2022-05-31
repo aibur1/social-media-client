@@ -45,3 +45,29 @@
 .option:hover{
     cursor: pointer;
 }
+
+.ps-button{
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 12px;
+}
+
+.previewImage{
+    position: relative;
+
+}
+
+.previewImage>svg{
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+    cursor: pointer;
+}
+
+.previewImage>img{
+    width: 100%;
+    max-width: 20rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
