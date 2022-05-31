@@ -13,10 +13,44 @@ const Auth = () => {
             </div>
         </div>
 
-        <SignUp />
+        <LogIn />
     </div>
   )
 }
+
+function LogIn(){
+   return(
+    <div className="a-right">
+      <form className="infoForm authForm">
+        <h3>Log In</h3>
+        <div>
+            <input
+             type="text" 
+             className='infoInput' 
+             name='username' 
+             placeholder='Username' 
+             />
+        </div>
+
+        <div>
+            <input
+             type="text" 
+             className="infoInput" 
+             name='password'  
+             placeholder='Password'
+             />
+           
+        </div>
+
+        <div style={{display:'flex'}}>
+            <span style={{fontSize:'12px'}}>Don't have an accout Sign Up</span>
+        <button className="button infoButton" type='submit'>Login</button>
+        </div>
+    </form>
+</div>
+   )
+}
+
 
 function SignUp(){
     return(
@@ -60,7 +94,7 @@ function SignUp(){
                 </div>
 
                 <div>
-                    <span>Already have an account. Login!</span>
+                    <span style={{fontSize:'12px'}}>Already have an account. Login!</span>
                 </div>
                 <button className="button infoButton" type='submit'>Signup</button>
             </form>
