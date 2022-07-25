@@ -9,6 +9,7 @@ const Auth = () => {
   const dispatch = useDispatch();
   const loading = useSelector((state) => state.authReducer.loading);
   const [isSignUp, setIsSignUp] = useState();
+  console.log(loading);
   const [data, setData] = useState({
     firstname: "",
     lastName: "",
@@ -138,8 +139,8 @@ const Auth = () => {
                 : "Don't have an account? Sign Up"}
             </span>
           </div>
-          <button className="button infoButton" type="submit">
-            {isSignUp ? "Signup" : "Log In"}
+          <button className="button infoButton" type="submit" disabled={loading}>
+            {loading? "Loading..." : isSignUp ? "Signup" : "Log In"}
           </button>
         </form>
       </div>
