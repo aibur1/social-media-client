@@ -24,7 +24,7 @@ const ProfileCard = ({location}) => {
         />
         <img
           src={
-            user.coverPicture
+            user.profilePicture
               ? serverPublic + user.profilePicture
               : serverPublic + "defaultProfile.jpg"
           }

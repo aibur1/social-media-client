@@ -7,8 +7,6 @@ import { useParams } from "react-router-dom";
 import * as UserApi from "../../api/UserRequest.js";
 import { logOut } from "../../actions/AuthAction";
 
-
-
 const InfoCard = () => {
   const [modalOpened, setModalOpened] = useState(false);
 
@@ -50,7 +48,7 @@ const InfoCard = () => {
             <ProfileModal
               modalOpened={modalOpened}
               setModalOpened={setModalOpened}
-              data = {user}
+              data={user}
             />
           </div>
         ) : (
